@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Copyright: EMC Corporation
+Version: 1.0
+Built-By: Chris Rink
+Built-Date: 2012-04-30 00:12:43
+Component-Bundle: xcp2shim
+Bundle-Version: 1.2
+Bundle-Name: xcp2shim
+Bundle-SymbolicName: xcp2shim
+NAMESPACE: shim2
