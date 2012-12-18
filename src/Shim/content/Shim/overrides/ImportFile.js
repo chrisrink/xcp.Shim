@@ -1,5 +1,6 @@
 Ext.define("Shim.overrides.ImportFile", {
 	override: "xcp.action.ImportFile",
+	requires: ["xcp.action.ImportFile"],
 	handler: function(actionArgs, action) {
 		var id;
 		var target = action.getTargets(actionArgs)[0];
@@ -34,4 +35,4 @@ Ext.define("Shim.overrides.ImportFile", {
 		}
 	}
 });
-Ext.require("shim2.action.ImportFile");
+Ext.require("Shim.overrides.ImportFile");

@@ -1,5 +1,5 @@
 Ext.define('Shim.utils.Component', {
-	requires: ['Shim..utils.jsonPath'],
+	requires: ['Shim.utils.Json'],
 	singleton: true,
 
 	getXCPCmp: function(xcpID){
