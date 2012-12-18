@@ -3,7 +3,7 @@
 	<name>getPicklistLabel</name>
 	<description>Will return the localized Picklist value label from a picklist</description>
 	<content src="content/Shim/functions/Picklist.js" type="text/javascript" />
-	<namespace>Shim.functions</namespace>
+	<namespace>Shim.functions.Picklist</namespace>
 	<categoryName>String</categoryName>
 	<returnType isRepeating="false">STRING</returnType>
 	<params>

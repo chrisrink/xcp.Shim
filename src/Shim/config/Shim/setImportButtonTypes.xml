@@ -7,7 +7,7 @@
 	<content src="content/Shim/utils/Component.js" type="text/javascript" />
 	<content src="content/Shim/overrides/ImportFile.js" type="text/javascript" />
 	<content src="content/Shim/functions/Importer.js" type="text/javascript" />
-	<namespace>Shim.functions</namespace>
+	<namespace>Shim.functions.Importer</namespace>
 	<categoryName>String</categoryName>
 	<returnType isRepeating="false">STRING</returnType>
 	<params>

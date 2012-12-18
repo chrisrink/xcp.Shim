@@ -3,7 +3,7 @@
 	<name>getLocationID</name>
 	<description>Returns the Object ID from the url of the page. , Useful to propigate an object ID to a master page when on an instance page. </description>
 	<content src="content/Shim/functions/Navigation.js" type="text/javascript" />
-	<namespace>Shim.functions</namespace>
+	<namespace>Shim.functions.Navigation</namespace>
 	<categoryName>String</categoryName>
 	<returnType isRepeating="false">STRING</returnType>
 	<params>

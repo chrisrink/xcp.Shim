@@ -25,7 +25,7 @@ Ext.define("Shim.overrides.ImportFile", {
 				args.allowedTypeValues = this.action.allowedTypeValues;
 			}else{
 				//lookup folderconfig
-				importFolderCnfg = Shim.utils.PropertyMap.get("folderImport");
+				importFolderCnfg = Shim.utils.PropertiesMap.get("folderImport");
 				if(importFolderCnfg !== undefined && importFolderCnfg[folderType] !== undefined){
 					args.allowedTypeValues =  importFolderCnfg[folderType];
 				}

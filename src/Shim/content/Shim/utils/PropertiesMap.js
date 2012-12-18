@@ -1,4 +1,4 @@
-Ext.define('Shim.util.PropertiesMap', {
+Ext.define('Shim.utils.PropertiesMap', {
     singleton: true,
     map: new Ext.util.MixedCollection(),
 

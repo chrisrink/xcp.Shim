@@ -1,5 +1,5 @@
 Ext.define('Shim.functions.Importer', {
-	requires: ['Shim.utils.Component','Shim.utils.Json', 'Shim.overrides.ImportFile'],
+	requires: ['Shim.utils.PropertiesMap','Shim.utils.Component','Shim.utils.Json', 'Shim.overrides.ImportFile'],
 	singleton: true,
 	
 	setImportButtonTypes: function(xcpID,typeSystemNames){
@@ -37,7 +37,7 @@ Ext.define('Shim.functions.Importer', {
 		});
 
 		//get Import Folder Import Configuration
-		folderImportCnfg = Shim.utils.PropertyMap.get("folderImport");
+		folderImportCnfg = Shim.utils.PropertiesMap.get("folderImport");
 		
 		//if this is the first time, create an empty object;
 		if(folderImportCnfg === undefined){
@@ -48,7 +48,7 @@ Ext.define('Shim.functions.Importer', {
 		folderImportCnfg[folderName] =allowedTypes;
 
 		//update Property Map
-		Shim.utils.PropertyMap.set("folderImport",folderImportCnfg);
+		Shim.utils.PropertiesMap.set("folderImport",folderImportCnfg);
 		return "";
 	}
 	
