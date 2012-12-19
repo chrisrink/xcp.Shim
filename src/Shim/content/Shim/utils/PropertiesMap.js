@@ -3,7 +3,7 @@ Ext.define('Shim.utils.PropertiesMap', {
     map: new Ext.util.MixedCollection(),
 
     get: function(key){
-	return this.map.getKey(key);
+	return this.map.get(key);
     },
 
     set: function(key,value){

@@ -4,8 +4,8 @@ Ext.define('Shim.functions.Triggers',{
 		return "";
 	},
 
-	triggerEcho: function(onChangeValues){
-		return onChangeValues;
+	triggerEcho: function(onChangeValue){
+		return onChangeValue;
 	},
 
 	toggle: function(state,alist){
