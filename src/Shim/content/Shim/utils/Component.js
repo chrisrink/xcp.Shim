@@ -12,13 +12,13 @@ Ext.define('Shim.utils.Component', {
 	},
 	
 	setProperty:function(xcpID,name,value){
-		var cmp = shim2.getXCPCmp(xcpID);
+		var cmp = this.getXCPCmp(xcpID);
 		if(cmp === undefined){
 			console.log("Failed to get Component " + xcpID);
 			return false;
 		}
 			
-		if(path.indexOf(".") > -1){
+		if(name.indexOf(".") > -1){
 			Shim.utils.Json.setProperty(name,value,cmp);
 		}else{
 			cmp[name]=value;

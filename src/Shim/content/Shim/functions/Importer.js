@@ -14,7 +14,7 @@ Ext.define('Shim.functions.Importer', {
 			typeSystemNames = [typeSystemNames];
 		}
 		
-		Shim.utils.Component.setProperties(xcpID,"action.allowedTypeValues",typeSystemNames);
+		Shim.utils.Component.setProperty(xcpID,"action.allowedTypeValues",typeSystemNames);
 		return "";
 	},
 

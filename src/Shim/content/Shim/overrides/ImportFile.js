@@ -12,9 +12,9 @@ Ext.define("Shim.overrides.ImportFile", {
 		}
 		
 		id= target.getId();
-		console.log("action",this.action,action,folderType);
+		
 		//  Show this dialog only in runtime, never in design time
-		if(id !== undefined && window.xcp !== undefined && xcp.navigationManager !== undefined){
+		if (!id && typeof(xcp) != 'undefined' && typeof(xcp.navigationManager) != 'undefined'){
 			id=xcp.navigationManager.currentNavigationContext.objectId;
 		}
 		if(id){

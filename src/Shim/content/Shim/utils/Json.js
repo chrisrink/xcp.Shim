@@ -129,7 +129,7 @@ Ext.define('Shim.utils.Json', {
 		key = namespaces.pop();
 
 		//check if hierarchy is shallow
-		if(pathAtts.length === 0){
+		if(namespaces.length === 0){
 			scope[key]=value;
 			return true;
 		}
