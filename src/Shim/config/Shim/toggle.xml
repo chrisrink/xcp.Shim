@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model" id="Shim.toggle" version="1.0.0000.000">
+	<name>setWidgetValue</name>
+	<description>Upon evaluation, the function will set the specified Widget value </description>
+	<namespace>Shim.functions.Triggers</namespace>
+	<categoryName>String</categoryName>
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="state" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+		<param name="aList" required="true">
+			<type isRepeating="true">STRING</type>
+		</param>
+	</params>
+</function>

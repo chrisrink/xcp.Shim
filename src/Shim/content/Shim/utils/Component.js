@@ -41,5 +41,22 @@ Ext.define('Shim.utils.Component', {
 		}
 
 		return cmp[name];
+	},
+
+	setValue: function(xcpID, value){
+		var cmp = this.getXCPCmp(xcpID);
+		if(cmp === undefined){
+			console.log("Failed to get Component " + xcpID);
+			return false;
+		}
+
+		if(typeof cmp.setValue !== 'function'){
+			console.log("Component doesn't have a value " + xcpID);
+			return false;
+		}
+		
+		return cmp.setValue(value);
+
+
 	}
 });
