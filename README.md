@@ -53,5 +53,5 @@ If you are in an Application Page with Content Tree or Actionflow, it is very us
 In order to execute these functions, a value display widget should be used which has no label. All of these utility functions will be called when the expression is evaluated. This is generally when the page loads. If you require to evaluate the the expression after the page loads, you can use other value changes to trigger the evaluation. I have created a function that makes this easier.
 
 3. triggerEval- Subscribes to a value and will cause the entire expression to be re-evaluated when the parameter changes. This will always return an empty string.
-  - **onChangeValue:** (Any) - The value to watch for a change
+  - **onChangeValue:** ([Any]) - The value to watch for a change
 
